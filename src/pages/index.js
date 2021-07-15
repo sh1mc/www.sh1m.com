@@ -1,26 +1,8 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import { graphql } from "gatsby"
-
 import Layout from "../components/layout"
-
 import { Heading1 } from "../styles/main"
-
 import Seo from "../components/seo"
-
-
-export const query = graphql`
-	query {
-		allMarkdownRemark {
-			nodes {
-				html
-				frontmatter {
-					title
-				}
-			}
-		}
-	}
-`
 
 const IndexPage = ({ data }) => (
 	<Layout>
@@ -35,3 +17,18 @@ const IndexPage = ({ data }) => (
 )
 
 export default IndexPage
+
+export const query = graphql`
+	query {
+		allMarkdownRemark {
+			nodes {
+				html
+				frontmatter {
+					title
+				}
+			}
+		}
+	}
+`
+
+

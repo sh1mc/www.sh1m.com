@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
 import styled from "styled-components"
+import { Color } from "../lib/consts"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -37,6 +38,7 @@ const Wrapper = styled.div`
 	margin: 0 auto;
 	maxWidth: 960;
 	padding: 0 1.0875rem 1.45rem;
+	color: ${Color.text};
 `
 
 export default Layout

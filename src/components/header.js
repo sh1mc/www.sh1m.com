@@ -10,13 +10,15 @@ const Header = ({ siteTitle }) => (
 	<Wrapper>
 	  <Heading>
         <HeaderLink to="/">
-		  <Icon />
+		  <HeaderIcon />
           {siteTitle}
         </HeaderLink>
 	  </Heading>
 	</Wrapper>
   </HeaderElem>
 )
+
+export default Header
 
 const Icon = () => (
 	<StaticImage
@@ -26,6 +28,10 @@ const Icon = () => (
 	/>
 )
 
+const HeaderIcon = styled(Icon)`
+	margin-right: 1rem;
+`
+
 Header.propTypes = {
   siteTitle: PropTypes.string,
 }
@@ -33,8 +39,6 @@ Header.propTypes = {
 Header.defaultProps = {
   siteTitle: ``,
 }
-
-export default Header
 
 const Heading = styled.h1`
 	margin: 0;

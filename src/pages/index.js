@@ -9,39 +9,22 @@ export const query = graphql`
 	query {
 		allMarkdownRemark {
 			nodes {
+				html
 				frontmatter {
 					title
 				}
-				html
 			}
 		}
 	}
 `
 
-const IndexPagea = ({ data }) => {
+export default ({ data }) => (
 	<Layout>
 		{data.allMarkdownRemark.nodes.map(node => (
-			<div key={node.id}>
+			<div>
 				<h1>{node.frontmatter.title}</h1>
 				<div dangerouslySetInnerHTML={{ __html: node.html }} />
 			</div>
 		))}
 	</Layout>
-}
-
-const IndexPage = () => (
-  <Layout>
-	<Seo title="Portfolio" />
-	<h1>ポートフォリオ</h1>
-	<p></p>
-	<StaticImage
-	  src="../images/sh1mc_icon.jpg"
-	  width={150}
-	  quality={95}
-	  formats={["AUTO", "WEBP", "AVIF"]}
-	  alt="sh1mc's icon"
-	/>
-  </Layout>
 )
-
-export default IndexPagea

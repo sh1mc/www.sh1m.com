@@ -7,26 +7,10 @@ import Seo from "../components/seo"
 const IndexPage = ({ data }) => (
     <Layout>
         <Seo title="ホーム" />
-        {data.allMarkdownRemark.nodes.map(node => (
-            <div>
-                <Heading1>{node.frontmatter.title}</Heading1>
-                <div dangerouslySetInnerHTML={{ __html: node.html }} />
-            </div>
-        ))}
+		<Heading1>欢迎光临!</Heading1>
     </Layout>
 )
 
 export default IndexPage
 
-export const query = graphql`
-    query {
-        allMarkdownRemark {
-            nodes {
-                html
-                frontmatter {
-                    title
-                }
-            }
-        }
-    }
-`
+

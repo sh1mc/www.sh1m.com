@@ -55,4 +55,6 @@ const Root = styled.html`
     box-sizing: border-box;
     overflow-y: scroll;
     background: ${Color.background};
+	position: relative;
+	min-height: 100vh;
 `

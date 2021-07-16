@@ -6,7 +6,6 @@ import Header from "./header"
 import Footer from "./footer"
 import styled from "styled-components"
 import { Color } from "../lib/consts"
-import { Helmet } from "react-helmet"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -22,11 +21,6 @@ const Layout = ({ children }) => {
 
     return (
         <>
-            <Helmet
-                htmlAttributes={{
-                    lang: "ja",
-                }}
-            />
             <Root>
                 <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
                 <Wrapper>
@@ -50,6 +44,8 @@ const Wrapper = styled.div`
     padding: 1.5rem 1.0875rem 1.45rem;
     color: ${Color.text};
     background: ${Color.secondary};
+	padding-right: 2rem;
+	padding-left: 2rem;
 `
 
 const Root = styled.html`

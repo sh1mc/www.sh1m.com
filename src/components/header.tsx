@@ -1,11 +1,12 @@
-import * as React from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { Color } from "../lib/consts"
 import { StaticImage } from "gatsby-plugin-image"
+import { mediaMobile } from "../lib/consts"
 
-const Header = ({ siteTitle }) => (
+const Header : React.FC = ({ siteTitle }) => (
     <HeaderElem>
         <Wrapper>
             <Heading>
@@ -15,6 +16,11 @@ const Header = ({ siteTitle }) => (
                 </HeaderLink>
             </Heading>
         </Wrapper>
+		 <Navi>
+            <NaviLink to="/">ホーム</NaviLink>
+            <NaviLink to="/portfolio">私について</NaviLink>
+            <NaviLink to="/links">リンク集</NaviLink>
+		 </Navi>
     </HeaderElem>
 )
 
@@ -36,6 +42,29 @@ Header.defaultProps = {
     siteTitle: ``,
 }
 
+const NaviLink = styled(Link)`
+	display: inline-block;
+    text-decoration: None;
+	color: ${Color.text};
+	margin-left: 0.4rem;
+	margin-right: 0.4rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	background: ${Color.secondary};
+	padding-left: 0.3rem;
+	padding-right: 0.3rem;
+	border-radius: 0.3rem;
+	box-shadow: 0.15rem 0.15rem ${Color.shadow};
+
+	font-size: 1.3rem;
+	${mediaMobile`font-size: 1rem;`}
+`
+
+const Navi = styled.div`
+	background: ${Color.tertiary};
+	padding-left: 0.8rem;
+`
+
 const Heading = styled.h1`
     margin: 0;
 `
@@ -53,4 +82,6 @@ const HeaderElem = styled.header`
 const HeaderLink = styled(Link)`
     color: ${Color.text};
     text-decoration: None;
+	font-size: 2.5rem;
+	${mediaMobile`font-size: 1.7rem;`}
 `

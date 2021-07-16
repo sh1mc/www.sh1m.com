@@ -6,6 +6,8 @@ module.exports = {
         siteUrl: `https://www.sh1m.com`,
     },
     plugins: [
+		`gatsby-plugin-breakpoints`,
+		`gatsby-plugin-typescript`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-image`,
         {

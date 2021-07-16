@@ -1,4 +1,4 @@
-import * as React from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -8,7 +8,7 @@ import styled from "styled-components"
 import { Color } from "../lib/consts"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout : React.FC = ({ children }) => {
     const data = useStaticQuery(graphql`
         query SiteTitleQuery {
             site {
@@ -55,4 +55,6 @@ const Root = styled.html`
     box-sizing: border-box;
     overflow-y: scroll;
     background: ${Color.background};
+	position: relative;
+	min-height: 100vh;
 `

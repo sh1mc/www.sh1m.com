@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Color } from "../lib/consts"
 
 export const Root = styled.html`
   -ms-text-size-adjust: 100%;
@@ -36,7 +37,7 @@ const Common = `
 
 const Heading = `
 	${Common}
-	color: inherit;
+	color: ${Color.text};
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 	  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	font-weight: bold;

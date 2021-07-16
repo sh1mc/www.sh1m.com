@@ -52,7 +52,6 @@ const Wrapper = styled.div`
 
 const HeaderElem = styled.header`
       background: ${Color.primaly};
-      margin-bottom: 1.45rem;
 `
 
 const HeaderLink = styled(Link)`

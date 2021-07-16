@@ -11,5 +11,5 @@ export default Footer
 const FooterElem = styled.footer`
 	margin-top: 2rem;
 	padding-bottom: 2rem;
-	background: ${Color.secondary};
+	background: ${Color.primaly};
 `

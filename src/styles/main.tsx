@@ -1,13 +1,6 @@
+import mediaQuery from "styled-media-query"
 import styled from "styled-components"
 import { Color } from "../lib/consts"
-
-export const Root = styled.html`
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    font: 112.5%/1.45em georgia, serif, sans-serif;
-    box-sizing: border-box;
-    overflow-y: scroll;
-`
 
 export const Body = styled.body`
     margin: 0;
@@ -44,10 +37,13 @@ const Heading = `
 	text-rendering: optimizeLegibility;
 `
 
+const mediaMobile = mediaQuery.lessThan("medium");
+
 export const Heading1 = styled.h1`
     ${Heading}
-    font-size: 2.25rem;
     line-height: 1.1;
+    font-size: 2.25rem;
+	${mediaMobile`font-size:1.7rem`}
 `
 
 export const Heading2 = styled.h2`

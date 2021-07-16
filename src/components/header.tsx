@@ -1,9 +1,10 @@
-import * as React from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { Color } from "../lib/consts"
 import { StaticImage } from "gatsby-plugin-image"
+import { mediaMobile } from "../lib/consts"
 
 const Header = ({ siteTitle }) => (
     <HeaderElem>
@@ -53,4 +54,6 @@ const HeaderElem = styled.header`
 const HeaderLink = styled(Link)`
     color: ${Color.text};
     text-decoration: None;
+	font-size: 2.5rem;
+	${mediaMobile`font-size: 1.5rem;`}
 `

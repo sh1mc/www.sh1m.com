@@ -83,5 +83,5 @@ const HeaderLink = styled(Link)`
     color: ${Color.text};
     text-decoration: None;
 	font-size: 2.5rem;
-	${mediaMobile`font-size: 1.7rem;`}
+	${mediaMobile`font-size: 1.6rem;`}
 `

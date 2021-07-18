@@ -8,7 +8,7 @@ import styled from "styled-components"
 import { Color } from "../lib/consts"
 import "./layout.css"
 
-const Layout : React.FC = ({ children }) => {
+const Layout: React.FC = ({ children }) => {
     const data = useStaticQuery(graphql`
         query SiteTitleQuery {
             site {
@@ -44,8 +44,8 @@ const Wrapper = styled.div`
     padding: 1.5rem 1.0875rem 1.45rem;
     color: ${Color.text};
     background: ${Color.secondary};
-	padding-right: 2rem;
-	padding-left: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
 `
 
 const Root = styled.html`
@@ -55,6 +55,6 @@ const Root = styled.html`
     box-sizing: border-box;
     overflow-y: scroll;
     background: ${Color.background};
-	position: relative;
-	min-height: 100vh;
+    position: relative;
+    min-height: 100vh;
 `

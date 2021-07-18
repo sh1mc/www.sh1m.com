@@ -1,6 +1,7 @@
 import mediaQuery from "styled-media-query"
 import styled from "styled-components"
 import { Color } from "../lib/consts"
+import { Link } from "gatsby"
 
 export const Body = styled.body`
     margin: 0;
@@ -81,3 +82,7 @@ export const Image = styled.img`
     max-width: 100%;
     ${Common}
 `
+
+export const Ul = styled.ul``
+export const Li = styled.li``
+export const A = styled(Link)``

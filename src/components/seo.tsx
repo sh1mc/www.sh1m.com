@@ -10,10 +10,10 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 type Props = {
-	description: string,
-	lang: string,
-	meta: any[],
-	title: string,
+    description: string
+    lang: string
+    meta: any[]
+    title: string
 }
 
 const Seo: React.FC<Props> = ({ description, lang, meta, title }) => {

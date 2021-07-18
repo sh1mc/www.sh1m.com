@@ -1,11 +1,9 @@
 import * as React from "react"
 import Layout from "../components/layout"
-import { Heading1 } from "../styles/main"
+import { Heading1, Ul, Li, A } from "../styles/main"
 import Seo from "../components/seo"
-import styled from "styled-components"
-import { Link } from "gatsby"
 
-const IndexPage = ({ data }) => (
+const IndexPage: React.FC = () => (
     <Layout>
         <Seo title="リンク集" />
         <Heading1>リンク集</Heading1>
@@ -26,7 +24,3 @@ const IndexPage = ({ data }) => (
 )
 
 export default IndexPage
-
-const Ul = styled.ul``
-const Li = styled.li``
-const A = styled(Link)``

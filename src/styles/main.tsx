@@ -37,13 +37,13 @@ const Heading = `
 	text-rendering: optimizeLegibility;
 `
 
-const mediaMobile = mediaQuery.lessThan("medium");
+const mediaMobile = mediaQuery.lessThan("medium")
 
 export const Heading1 = styled.h1`
     ${Heading}
     line-height: 1.1;
     font-size: 2.25rem;
-	${mediaMobile`font-size:1.7rem`}
+    ${mediaMobile`font-size:1.7rem`}
 `
 
 export const Heading2 = styled.h2`

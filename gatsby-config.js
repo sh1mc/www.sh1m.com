@@ -6,8 +6,8 @@ module.exports = {
         siteUrl: `https://www.sh1m.com`,
     },
     plugins: [
-		`gatsby-plugin-breakpoints`,
-		`gatsby-plugin-typescript`,
+        `gatsby-plugin-breakpoints`,
+        `gatsby-plugin-typescript`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-image`,
         {
@@ -60,7 +60,7 @@ module.exports = {
             },
         },
         `gatsby-plugin-gatsby-cloud`,
-		`gatsby-plugin-preact`,
+        `gatsby-plugin-preact`,
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // To learn more, visit: https://gatsby.dev/offline
         // `gatsby-plugin-offline`,

@@ -6,11 +6,9 @@ import Seo from "../components/seo"
 const IndexPage = ({ data }) => (
     <Layout>
         <Seo title="ホーム" />
-		<Heading1>ホーム</Heading1>
-		<Heading2>欢迎光临!</Heading2>
+        <Heading1>ホーム</Heading1>
+        <Heading2>欢迎光临!</Heading2>
     </Layout>
 )
 
 export default IndexPage
-
-

@@ -31,7 +31,7 @@ function Seo({ description, lang, meta, title }) {
     return (
         <Helmet
             htmlAttributes={{
-				lang: "ja",
+                lang: "ja",
             }}
             title={title}
             titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}

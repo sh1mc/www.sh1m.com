@@ -63,6 +63,7 @@ const NaviLink = styled(Link)`
 const Navi = styled.div`
     background: ${Color.tertiary};
     padding-left: 0.8rem;
+    font-family: "M PLUS Rounded 1c", sans-serif;
 `
 
 const Heading = styled.h1`
@@ -83,5 +84,5 @@ const HeaderLink = styled(Link)`
     color: ${Color.text};
     text-decoration: None;
     font-size: 2.5rem;
-    ${mediaMobile`font-size: 1.6rem;`}
+    ${mediaMobile`font-size: 1.7rem;`}
 `

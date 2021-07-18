@@ -32,8 +32,7 @@ const Common = `
 const Heading = `
 	${Common}
 	color: ${Color.text};
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-	  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-family: 'M PLUS 1p', sans-serif;
 	font-weight: bold;
 	text-rendering: optimizeLegibility;
 `
@@ -45,12 +44,15 @@ export const Heading1 = styled.h1`
     line-height: 1.1;
     font-size: 2.25rem;
     ${mediaMobile`font-size:1.7rem`}
+    ${mediaMobile`line-height: 1;`}
 `
 
 export const Heading2 = styled.h2`
     ${Heading}
-    font-size: 1.62671rem;
     line-height: 1.1;
+    font-size: 1.62671rem;
+    ${mediaMobile`font-size:1.4rem;`}
+    ${mediaMobile`line-height: 1;`}
 `
 
 export const Heading3 = styled.h3`
@@ -83,6 +85,18 @@ export const Image = styled.img`
     ${Common}
 `
 
-export const Ul = styled.ul``
-export const Li = styled.li``
-export const A = styled(Link)``
+const NormalFont = `
+	font-family: 'M PLUS Rounded 1c, sans-serif';
+	font-size: 1.2rem;
+    ${mediaMobile`font-size: 1rem;`}
+`
+
+export const Ul = styled.ul`
+    ${NormalFont}
+`
+export const Li = styled.li`
+    ${NormalFont}
+`
+export const A = styled(Link)`
+    ${NormalFont}
+`

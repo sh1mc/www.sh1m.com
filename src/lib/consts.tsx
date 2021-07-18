@@ -6,6 +6,6 @@ export const Color = {
     background: "whitesmoke",
     shadow: "silver",
     text: "#222222",
-}
+} as const
 
 export const mediaMobile = mediaQuery.lessThan("medium")

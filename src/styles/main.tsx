@@ -2,6 +2,7 @@ import mediaQuery from "styled-media-query"
 import styled from "styled-components"
 import { Color } from "../lib/consts"
 import { Link } from "gatsby"
+import { mediaMobile } from "../lib/consts"
 
 export const Body = styled.body`
     margin: 0;
@@ -36,8 +37,6 @@ const Heading = `
 	font-weight: bold;
 	text-rendering: optimizeLegibility;
 `
-
-const mediaMobile = mediaQuery.lessThan("medium")
 
 export const Heading1 = styled.h1`
     ${Heading}
@@ -86,7 +85,7 @@ export const Image = styled.img`
 `
 
 const NormalFont = `
-	font-family: 'M PLUS Rounded 1c, sans-serif';
+	font-family: 'M PLUS Rounded 1c', sans-serif;
 	font-size: 1.2rem;
     ${mediaMobile`font-size: 1rem;`}
 `

@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { mediaMobile } from "../lib/consts"
 
 import Header from "./header"
 import Footer from "./footer"
@@ -51,10 +52,12 @@ const Wrapper = styled.div`
 const Root = styled.html`
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    font: 112.5%/1.45em georgia, serif, sans-serif;
     box-sizing: border-box;
     overflow-y: scroll;
     background: ${Color.background};
     position: relative;
     min-height: 100vh;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-size: 1.2rem;
+    ${mediaMobile`font-size: 1rem;`}
 `

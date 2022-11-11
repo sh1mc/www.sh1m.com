@@ -6,7 +6,7 @@ import { Color } from "../lib/consts"
 import { StaticImage } from "gatsby-plugin-image"
 import { mediaMobile } from "../lib/consts"
 
-const Header : React.FC = ({ siteTitle }) => (
+const Header: React.FC = ({ siteTitle }) => (
     <HeaderElem>
         <Wrapper>
             <Heading>
@@ -16,11 +16,11 @@ const Header : React.FC = ({ siteTitle }) => (
                 </HeaderLink>
             </Heading>
         </Wrapper>
-		 <Navi>
+        <Navi>
             <NaviLink to="/">ホーム</NaviLink>
             <NaviLink to="/portfolio">私について</NaviLink>
             <NaviLink to="/links">リンク集</NaviLink>
-		 </Navi>
+        </Navi>
     </HeaderElem>
 )
 
@@ -43,26 +43,27 @@ Header.defaultProps = {
 }
 
 const NaviLink = styled(Link)`
-	display: inline-block;
+    display: inline-block;
     text-decoration: None;
-	color: ${Color.text};
-	margin-left: 0.4rem;
-	margin-right: 0.4rem;
-	margin-top: 0.5rem;
-	margin-bottom: 0.5rem;
-	background: ${Color.secondary};
-	padding-left: 0.3rem;
-	padding-right: 0.3rem;
-	border-radius: 0.3rem;
-	box-shadow: 0.15rem 0.15rem ${Color.shadow};
+    color: ${Color.text};
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background: ${Color.secondary};
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border-radius: 0.3rem;
+    box-shadow: 0.15rem 0.15rem ${Color.shadow};
 
-	font-size: 1.3rem;
-	${mediaMobile`font-size: 1rem;`}
+    font-size: 1.3rem;
+    ${mediaMobile`font-size: 1rem;`}
 `
 
 const Navi = styled.div`
-	background: ${Color.tertiary};
-	padding-left: 0.8rem;
+    background: ${Color.tertiary};
+    padding-left: 0.8rem;
+    font-family: "M PLUS Rounded 1c", sans-serif;
 `
 
 const Heading = styled.h1`
@@ -82,6 +83,6 @@ const HeaderElem = styled.header`
 const HeaderLink = styled(Link)`
     color: ${Color.text};
     text-decoration: None;
-	font-size: 2.5rem;
-	${mediaMobile`font-size: 1.6rem;`}
+    font-size: 2.5rem;
+    ${mediaMobile`font-size: 1.6rem;`}
 `

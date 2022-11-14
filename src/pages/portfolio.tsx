@@ -68,6 +68,13 @@ const IndexPage: React.FC = () => (
                 </Ul>
             </Li>
             <Li>
+                韓国語
+                <Ul>
+                    <Li>大学で半年ぐらいやりました</Li>
+                    <Li>ハングルは読めますが、文章も単語もおぼつかないです</Li>
+                </Ul>
+            </Li>
+            <Li>
                 メタバース
                 <Ul>
                     <Li>VRChat を 12000 時間ぐらいやってます</Li>

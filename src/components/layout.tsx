@@ -47,7 +47,6 @@ const Wrapper = styled.div`
     background: ${Color.secondary};
     padding-right: 2rem;
     padding-left: 2rem;
-    margin-bottom: 2rem;
 `
 
 const Root = styled.html`

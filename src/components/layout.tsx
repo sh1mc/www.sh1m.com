@@ -47,13 +47,13 @@ const Wrapper = styled.div`
     background: ${Color.secondary};
     padding-right: 2rem;
     padding-left: 2rem;
+    margin-bottom: 2rem;
 `
 
 const Root = styled.html`
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     box-sizing: border-box;
-    overflow-y: scroll;
     background: ${Color.background};
     position: relative;
     min-height: 100vh;
